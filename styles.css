@@ -4,7 +4,7 @@
 }
 
 :root{
-    --primary-color: #a7f3d0;
+    --primary-color: #9ca3af;
     --background-color: #e7e5e4;
     --hover-color: #881337;
     --active-link-color: #881337;
@@ -84,6 +84,15 @@ button{
     font-weight: 800;
 }
 
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 30%;
+}
+
 .quiz-container {
     text-align: center;
     display: flex;
@@ -145,6 +154,7 @@ div {
     text-align: center;
     background-color: var(--primary-color);
     margin-top: auto;
+    color: #881337;
 }
 
 .footer-img {
