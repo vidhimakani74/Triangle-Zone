@@ -1,0 +1,156 @@
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #a7f3d0;
+    --background-color: #e7e5e4;
+    --hover-color: #881337;
+    --active-link-color: #881337;
+}
+body{
+    margin: 0;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    margin: auto;
+    font-size: 2rem;
+}
+h2{
+    text-align: center;
+}
+nav{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto minmax(auto, 3fr);
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+}
+input{
+    display: block;
+    margin: 0.5rem 1.5rem 1.5rem;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+button{
+    padding: 0.7rem;
+    font-family: 'Righteous', cursive;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.result{
+    margin: auto;
+}
+.nav .link-container{
+    grid-column: 2/3;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+
+}
+
+.nav .link-title{
+    grid-column: 1/2;
+    text-decoration: none;
+    color: black;
+    padding-left: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.link:hover, button:hover, .link-title h1:hover{
+    color: var(--hover-color)
+}
+
+.nav .link-active{
+    color: var(--active-link-color);
+    font-weight: 800;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 30%;
+}
+
+.main-container label{
+    font-weight: 600;
+}
+
+
+
+.quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-container h1{
+    text-align: center;
+}
+
+.quiz-container .container{
+    width: 70%;
+}
+
+.question-container{
+    padding: 0.5rem;
+}
+
+.btn-quiz{
+    padding: 0.7rem;
+    font-family: 'Righteous', cursive;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.output-score{
+    text-align: center;
+}
+
+.btn-quiz:hover{
+    color: var(--hover-color);
+}
+
+.footer {
+    padding: 1.2rem 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin-top: auto;
+}
+
+.footer-img {
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+.footer .link-social {
+    text-decoration: none;
+    margin: 0.5rem;
+}
